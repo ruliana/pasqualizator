@@ -99,7 +99,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
+  bundler (~> 1.14.6)
   dry-validation (~> 0.10)
   guard (~> 2.14)
   guard-minitest (~> 2.4)
