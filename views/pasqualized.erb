@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Pasqualizator</title>
+    </header>
+    <body>
+        <h1>Pasqualizator <%= Pascoale::VERSION %></h1>
+        <form action="pasqualize" method="POST">
+            <h2>Texto:</h2>
+            <p>
+                <textarea cols="80" id="text" name="text" rows="10">
+<%= @text %>
+                </textarea>
+            </p>
+            <br>
+            <input type="submit" value="Repasqualizar">
+        </form>
+        <h2>Texto Paqualizado:</h2>
+        <p>
+            Texto quebrado em tokens, separados em sílabas e com a tônica marcada.
+        </p>
+        <ul>
+            <% @tokens.each do |token| %>
+                <li><%= token %></li>
+            <% end %>
+        </ul>
+    </body>
+</html>

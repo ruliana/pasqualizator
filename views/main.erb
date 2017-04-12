@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Pasqualizator</title>
+    </header>
+    <body>
+        <h1>Pasqualizator <%= Pascoale::VERSION %></h1>
+        <form action="pasqualize" method="POST">
+            <p>Cole um texto em português aqui:</p>
+            <textarea cols="80" id="text" name="text" rows="10">
+Exemplo de texto.
+            </textarea>
+            <br>
+            <input type="submit" value="Pasqualizar">
+        </form>
+        <p>
+            O Pasqualizator é uma <b>série de algoritmos</b> para processamento de <b>texto em português</b>. Ele é capaz de fazer <b>separação silábica</b>, anotar a <b>sílaba tônica</b>, pluralização, singularização e outras pequenos malabarismos. A parte interessante é que não existe um dicionário, então ele é capaz de fazer separação (ou tentar) em palavras "novas".
+        </p>
+        <p>
+            Por outro lado, o Pasqualizador erra volta e meia (mais do que eu gostaria). E justamente para aprimorar esses erros, montei essa página para ficar experimentando com textos. Experimente um tanto, e se estiver se sentindo bem, me mande um feedback com os problemas.
+        </p>
+        <p>
+            Se você estiver curioso, o separador silábico acertou em ~99,5% testado em um corpus que testei com cerca de 170.000 palavras. Mas ainda não consegui checar a precisão dos outros algoritmos como o anotador de sílabas tônicas e o pluralizador.
+        </p>
+        <p>
+            Se quiser experimentar onde ele anda errando, seguem algumas palavras:
+            <ul>
+                <li>traição (trai-ção)</li>
+                <li>intuitivo (in-tu-i-ti-vo)</li>
+                <li>genuinamente (ge-nu-i-na-men-te)</li>
+                <li>abrupto (ab-rup-to)</li>
+                <li>maiô (maiô não sem separação)</li>
+            </ul>
+        </p>
+        <p>
+            (No geral, ele se embanana em sílabas com "ui")
+        </p>
+    </body>
+</html>

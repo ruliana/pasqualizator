@@ -7,6 +7,8 @@ ruby "2.4.1"
 gem "dry-validation", "~> 0.10"
 gem "sinatra", "~> 1.4"
 
+gem "pascoale", "~> 0.3"
+
 group "development" do
   gem "bundler", "~> 1.14.6"
   gem "rerun", "~> 0.11"
