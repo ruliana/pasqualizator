@@ -68,7 +68,7 @@ class App < Sinatra::Base
   end
 
   def tokenize(text)
-    tokens = text.scan(/()|([[:blank:]]|[[:punct:]])|([[:word:]]+)/)
+    tokens = text.scan(/([[:blank:]]|[[:punct:]])|([[:word:]]+)/)
     tokens.map { |(p, w)| w.nil? ? Punct.new(p) : Word.new(w) }
           .select(&:word?)
   end
