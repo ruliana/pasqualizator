@@ -2,22 +2,22 @@
 
 source 'https://rubygems.org'
 
-ruby "2.5.1"
+ruby "2.7.0"
 
-gem "dry-validation", "~> 0.10"
-gem "sinatra", "~> 1"
+gem "dry-validation"
+gem "sinatra"
 
 gem "pascoale", "~> 0.3"
 
 group "development" do
-  gem "bundler", "~> 1"
-  gem "rerun", "~> 0.11"
-  gem "rubocop", "~> 0.48"
+  gem "bundler"
+  gem "rerun"
+  gem "rubocop"
 end
 
 group "test" do
-  gem "guard", "~> 2"
-  gem "guard-minitest", "~> 2"
-  gem "guard-rubocop", "~> 1"
-  gem "minitest", "~> 5"
+  gem "guard"
+  gem "guard-minitest"
+  gem "guard-rubocop"
+  gem "minitest"
 end
