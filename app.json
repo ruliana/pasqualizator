@@ -1,8 +1,8 @@
 {
-  "name": "Start on Heroku: Ruby",
-  "description": "A barebones Rails app, which can easily be deployed to Heroku",
+  "name": "Pasqualizator",
+  "description": "A syllabic separator for Brazilian Portuguese",
   "image": "heroku/ruby",
-  "repository": "https://github.com/heroku/ruby-getting-started",
-  "keywords": ["ruby", "rails" ],
-  "addons": [ "heroku-postgresql" ]
+  "repository": "https://github.com/ruliana/pasqualizator",
+  "keywords": ["ruby"],
+  "addons": []
 }
